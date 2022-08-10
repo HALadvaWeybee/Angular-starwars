@@ -1,14 +1,29 @@
 <h1>{{title}}</h1>
+
 <div class="main_div">
-    <!-- <h2>{{item}}</h2> -->
-    <div class="image" *ngFor="let item of images">
-      <img src="{{item}}" alt="image is not found">
+   <div class="image">
+      <img src="https://starwars-visualguide.com/assets/img/characters/2.jpg" alt="No image found">
+      <div class="header">
+        <h2>{{"himanshu"}}</h2>
+      </div>
     </div>
+   
 </div>
+
+
+<!-- <div class="main_div">
+    <div class="image" *ngFor="let item of [].constructor(81); let i = index">
+      <img src="https://starwars-visualguide.com/assets/img/characters/{{i+1}}.jpg" alt="image is not found"/>
+    </div>
+    <div *ngFor="let item of peopleM">
+      <ul *ngFor="let data of item">
+        <li>{{data.name}}</li>
+      </ul>
+    </div>
+</div> -->
+<!-- <h1 [style.color]="color">Hello Hi</h1> -->
 <!-- <p>{{peopleM.length}}</p>
 <ul *ngFor="let item of peopleM">
-  <li>{{item}}</li>
-  <li>{{item.length}}</li>
   <ul *ngFor="let item2 of item">
       <li>{{item2.name}}</li>
   </ul>
